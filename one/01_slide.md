@@ -34,11 +34,12 @@ vários locais onde dados são armazenados:
 <!SLIDE center smbullets incremental transition=fade> 
 Além disso 
 
-+ discos rígidos e unidades de armazenamento externas 
+<p>Além disso tem os discos rígidos e unidades de armazenamento externas citados abaixo:</p> 
     - pendrives 
     - CD-ROMs 
     - DVD-ROMs 
-    - fitas magnéticas 
+    - Discos SSD SSHD ou SAS
+    - fitas magnéticas e etc...
 
 <p>também podem ser
 considerados memória em um um sentido mais amplo, pois também têm como função
@@ -51,3 +52,43 @@ isso têm características distintas</p>
 + velocidade de operação
 + consumo de energia
 + custo por byte armazenado
+<!SLIDE>
+<p>Essas características
+permitem definir uma hierarquia de memória, representada na forma de uma pirâmide como a imagem logo abaixo:</p>
+![hierarquia de Memória](gm.jpg "Hierarquia de Memória")
+<!SLIDE center>
+<p>Nessa pirâmide, observa-se que memórias mais rápidas, como os registradores da
+CPU e os caches, são menores (têm menor capacidade de armazenamento), mais caras e
+consomem mais energia que memórias mais lentas, como a memória principal (RAM) e
+os discos rígidos.
+</p>
+<!SLIDE center>
+<p>Além disso, as memórias mais rápidas são voláteis, ou seja, perdem seu conteúdo ao ficarem sem energia.</p>
+<p>Memórias que preservam seu conteúdo mesmo
+quando não tiverem energia são denominadas não-voláteis.</p>
+
+<!SLIDE>
+Tempo de Acesso 
+--
+<p>O tempo de acesso caracteriza o tempo necessário para iniciar uma
+transferência de dados de/para um determinado meio de armazenamento</p>
+<!SLIDE>
+Taxa de Transferência
+--
+<p>taxa de transferência indica quantos bytes por segundo podem ser lidos/escritos
+naquele meio, uma vez iniciada a transferência de dados.</p>
+<!SLIDE smbullets center small>
+Outra característica importante das memórias é a rapidez de seu funcionamento,
+que pode ser detalhada em duas dimensões: 
+
+    + tempo de acesso (ou latência) 
+    + Taxa de transferência.
+
+
+| Meio                 | Tempo de Acesso                                                                                          | Taxa de transferência            |
+|----------------------|----------------------------------------------------------------------------------------------------------|----------------------------------|
+| Cache L2             | 1ns                                                                                                      | 1GB/s (1 ns/byte)                |
+| Memória RAM          | 60 ns                                                                                                    | 1GB/s (1 ns/byte)                |
+| Memória flash (NAND) | 2 ms                                                                                                     | 10 MB/s (100 ns/byte)            |
+| Disco rígido IDE     | 10 ms (tempo necessário para odeslocamento da cabeça de lei-tura e rotação do disco até o setordesejado) | 80 MB/s (12 ns/byte)             |
+| DVD-ROM              | de 100 ms a vários minutos (casoa gaveta do leitor esteja aberta ouo disco não esteja no leitor)         | 10 MB/s (100 ns/byte) |
