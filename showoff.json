@@ -1,0 +1,8 @@
+{ 
+    "name": "Gerencia de memória ", 
+    "description": "Curso Sistemas Operacionais",
+    "author": "Rousseau L. Braga",
+    "sections": [ 
+        {"section":"one"} 
+    ]
+}
